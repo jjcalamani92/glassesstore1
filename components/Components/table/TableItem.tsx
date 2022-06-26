@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useRouter } from 'next/router';
 import Link from "next/link";
 import React, { FC, useState } from "react";
-import { Category, IHomeAppliance, Item, Site } from "../../../src/interfaces";
+import { Category, IGlasses, Item, Site } from "../../../src/interfaces";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPenToSquare, faCircleMinus } from '@fortawesome/free-solid-svg-icons';
 import axios from "axios";
@@ -53,7 +53,7 @@ export const TableItem: FC<Props> = ({ items, category, section }) => {
             <div className="my-6 container mx-auto flex flex-row lg:flex-row items-center lg:items-center justify-between ">
               <h4 className="text-2xl font-bold leading-tight text-gray-800">Items</h4>
               <Link href={`/admin/sites/${router.query.category}/${router.query.section}/new`}>
-                <a className="transition duration-150 ease-in-out hover:bg-red-600 focus:outline-none border bg-red-500 rounded text-white px-8 py-2 text-sm">Nuevo Item</a>
+                <a className="transition duration-150 ease-in-out hover:bg-rose-600 focus:outline-none border bg-rose-500 rounded text-white px-8 py-2 text-sm">Nuevo Item</a>
               </Link>
             </div>
             <div className="hidden lg:flex">

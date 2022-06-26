@@ -1,15 +1,15 @@
 import { gql } from "@apollo/client";
 
 export const PBS = gql`
-	query HomeApplianceAll($site: String!) {
-		homeApplianceAll(site: $site) {
+	query GlassesAll($site: String!) {
+		glassesAll(site: $site) {
 			slug
 		}
 	}
 `;
 export const PRODUCTS = gql`
-	query HomeApplianceAll($site: String!) {
-		homeApplianceAll(site: $site) {
+	query GlassesAll($site: String!) {
+		glassesAll(site: $site) {
 			name
 			image
 			price
@@ -23,23 +23,23 @@ export const PRODUCTS = gql`
 `;
 
 export const CATEGORY = gql`
-	query HomeApplianceAll($site: String!) {
-		homeApplianceAll(site: $site) {
+	query GlassesAll($site: String!) {
+		glassesAll(site: $site) {
 			category
 		}
 	}
 `;
 export const SECTION = gql`
-	query HomeApplianceAll($site: String!) {
-		homeApplianceAll(site: $site) {
+	query GlassesAll($site: String!) {
+		glassesAll(site: $site) {
 			category
 			section
 		}
 	}
 `;
 export const ITEM = gql`
-	query HomeApplianceAll($site: String!) {
-		homeApplianceAll(site: $site) {
+	query GlassesAll($site: String!) {
+		glassesAll(site: $site) {
 			category
 			section
 			item
@@ -47,29 +47,29 @@ export const ITEM = gql`
 	}
 `;
 
-export const CLOTHINGS = gql`
-	query HomeAppliances {
-		homeAppliances {
-			_id
-			name
-			brand
-			description
-			image
-			inStock
-			slug
-			section
-			item
-			category
-			price
-			tags
-			site
-		}
-	}
-`;
+// export const CLOTHINGS = gql`
+// 	query Glassess {
+// 		glassess {
+// 			_id
+// 			name
+// 			brand
+// 			description
+// 			image
+// 			inStock
+// 			slug
+// 			section
+// 			item
+// 			category
+// 			price
+// 			tags
+// 			site
+// 		}
+// 	}
+// `;
 
 export const PRODUCTS_BY_ITEM = gql`
-	query HomeApplianceByCategoryAndSectionAndItem($category: String!, $section: String!, $item: String!, $site: String!) {
-		homeApplianceByCategoryAndSectionAndItem(category: $category, section: $section, item: $item, site: $site) {
+	query GlassesByCategoryAndSectionAndItem($category: String!, $section: String!, $item: String!, $site: String!) {
+		glassesByCategoryAndSectionAndItem(category: $category, section: $section, item: $item, site: $site) {
 			name
 			price
 			image
@@ -78,8 +78,8 @@ export const PRODUCTS_BY_ITEM = gql`
 	}
 `;
 export const PRODUCTS_BY_SECTION = gql`
-	query HomeApplianceByCategoryAndSectionAndItem($category: String!, $section: String!, $item: String!, $site: String!) {
-		homeApplianceByCategoryAndSectionAndItem(category: $category, section: $section, item: $item, site: $site) {
+	query GlassesByCategoryAndSectionAndItem($category: String!, $section: String!, $item: String!, $site: String!) {
+		glassesByCategoryAndSectionAndItem(category: $category, section: $section, item: $item, site: $site) {
 			name
 			price
 			image
@@ -89,8 +89,8 @@ export const PRODUCTS_BY_SECTION = gql`
 `;
 
 export const PRODUCT_BY_SLUG = gql`
-	query HomeApplianceBySlug($slug: String!, $site: String!) {
-		homeApplianceBySlug(slug: $slug, site: $site) {
+	query GlassesBySlug($slug: String!, $site: String!) {
+		glassesBySlug(slug: $slug, site: $site) {
 			_id
 			name
 			brand
@@ -105,14 +105,19 @@ export const PRODUCT_BY_SLUG = gql`
 			oldPrice
 			tags
 
+			glasses
+			form
+			bridge
+			rod
+
 		}
 	}
 `;
 
 
 export const PRODUCT_ALL = gql`
-	query HomeAppliancesAll($limit: Float!, $offset:Float!, $site: String!) {
-		homeAppliancesAll(input:  { limit: $limit, offset: $offset}, site:$site ) {
+	query GlassessAll($limit: Float!, $offset:Float!, $site: String!) {
+		glassessAll(input:  { limit: $limit, offset: $offset}, site:$site ) {
 			_id
 			name
 			brand
@@ -126,7 +131,10 @@ export const PRODUCT_ALL = gql`
 			price
 			tags
 
-			color
+			glasses
+			form
+			bridge
+			rod
 		}
 
 }

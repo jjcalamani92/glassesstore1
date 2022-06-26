@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Category, Featured, IHomeAppliance, IMark, Item, Section } from "../../src/interfaces";
+import { Category, Featured, IGlasses, IMark, Item, Section } from "../../src/interfaces";
 import Link from "next/link";
 import axios from "axios";
 import { useRouter } from "next/router";
@@ -7,7 +7,7 @@ import Image from "next/image";
 import Swal from "sweetalert2";
 
 interface Props {
-	products: IHomeAppliance[];
+	products: IGlasses[];
 }
 interface LayoutMarkListAdmin {
 	marks: IMark[];
@@ -103,7 +103,7 @@ export const LayoutItemListAdmin: FC<Props> = ({ products }) => {
 
 					}),
 				// await axios.put(`${process.env.APIS_URL}/api/site/removecategory/${process.env.API_SITE}`, {category: id})
-				await axios.delete(`${process.env.APIP_URL}/api/homeAppliance/${id}`)
+				await axios.delete(`${process.env.APIP_URL}/api/glasses/${id}`)
 				router.reload()
 			}
 		})
@@ -153,7 +153,7 @@ export const LayoutItemListAdmin: FC<Props> = ({ products }) => {
 								
 							</div>
 							</Link>
-							<div onClick={() => onDeleteData(product._id)}  className="mt-4 transition text-center duration-150 ease-in-out hover:bg-red-600 focus:outline-none border bg-red-500 rounded text-white px-8 py-2 text-sm">Eliminar</div>
+							<div onClick={() => onDeleteData(product._id)}  className="mt-4 transition text-center duration-150 ease-in-out hover:bg-rose-600 focus:outline-none border bg-rose-500 rounded text-white px-8 py-2 text-sm">Eliminar</div>
 							</div>
 						))}
 					</div>
@@ -235,7 +235,7 @@ export const LayoutMarkListAdmin: FC<LayoutMarkListAdmin> = ({ marks }) => {
 								
 							</div>
 							</Link>
-							<div onClick={() => onDeleteData(product._id)}  className="mt-4 transition text-center duration-150 ease-in-out hover:bg-red-600 focus:outline-none border bg-red-500 rounded text-white px-8 py-2 text-sm">Eliminar</div>
+							<div onClick={() => onDeleteData(product._id)}  className="mt-4 transition text-center duration-150 ease-in-out hover:bg-rose-600 focus:outline-none border bg-rose-500 rounded text-white px-8 py-2 text-sm">Eliminar</div>
 							</div>
 						))}
 					</div>
@@ -310,7 +310,7 @@ export const LayoutCategoryListAdmin: FC<LayoutCategoryListAdmin> = ({ data }) =
 								</div>
 								</a>
 							</Link>
-							<div onClick={() => onDeleteData(d._id)}  className="mt-4 transition text-center duration-150 ease-in-out hover:bg-red-600 focus:outline-none border bg-red-500 rounded text-white px-8 py-2 text-sm">Eliminar</div>
+							<div onClick={() => onDeleteData(d._id)}  className="mt-4 transition text-center duration-150 ease-in-out hover:bg-rose-600 focus:outline-none border bg-rose-500 rounded text-white px-8 py-2 text-sm">Eliminar</div>
 						</div>
 						))}
 					</div>
@@ -386,7 +386,7 @@ export const LayoutSectionListAdmin: FC<LayoutSectionListAdmin> = ({ data, categ
 								</div>
 								</a>
 							</Link>
-							<div onClick={() => onDeleteData(d._id)}  className="mt-4 transition text-center duration-150 ease-in-out hover:bg-red-600 focus:outline-none border bg-red-500 rounded text-white px-8 py-2 text-sm">Eliminar</div>
+							<div onClick={() => onDeleteData(d._id)}  className="mt-4 transition text-center duration-150 ease-in-out hover:bg-rose-600 focus:outline-none border bg-rose-500 rounded text-white px-8 py-2 text-sm">Eliminar</div>
 						</div>
 						))}
 					</div>
@@ -463,7 +463,7 @@ export const LayoutFeaturedListAdmin: FC<LayoutFeaturedListAdmin> = ({ data, cat
 								
 								</a>
 								</Link>
-								<div onClick={() => onDeleteData(d._id)}  className="mt-4 transition text-center duration-150 ease-in-out hover:bg-red-600 focus:outline-none border bg-red-500 rounded text-white px-8 py-2 text-sm">Eliminar</div>
+								<div onClick={() => onDeleteData(d._id)}  className="mt-4 transition text-center duration-150 ease-in-out hover:bg-rose-600 focus:outline-none border bg-rose-500 rounded text-white px-8 py-2 text-sm">Eliminar</div>
 							</div>
 							
 						))}
@@ -541,7 +541,7 @@ export const LayoutItemsListAdmin: FC<LayoutItemsListAdmin> = ({ data, category,
 									</a>
 									
 								</Link>
-									<div onClick={() => onDeleteData(d._id)}  className="mt-4 transition text-center duration-150 ease-in-out hover:bg-red-600 focus:outline-none border bg-red-500 rounded text-white px-8 py-2 text-sm">Eliminar</div>
+									<div onClick={() => onDeleteData(d._id)}  className="mt-4 transition text-center duration-150 ease-in-out hover:bg-rose-600 focus:outline-none border bg-rose-500 rounded text-white px-8 py-2 text-sm">Eliminar</div>
 							</div>
 
 						))}

@@ -60,7 +60,7 @@ export const LayoutAdmin: FC<Props> = ({children}) => {
                               />
                             </svg>
                           </div>
-                          <p className={pathname === '/admin' ? "text-red-500 ml-3 text-lg" : "text-gray-700 ml-3 text-lg"}>Productos</p>
+                          <p className={pathname === '/admin' ? "text-rose-500 ml-3 text-lg" : "text-gray-700 ml-3 text-lg"}>Productos</p>
                         </div>
                         {/* <div onClick={() => setProduct(!product)}>
                           {product ? (
@@ -83,9 +83,9 @@ export const LayoutAdmin: FC<Props> = ({children}) => {
                       {/* {product ? (
                         <div>
                           <ul className="my-3">
-                            <li className="text-sm text-red-500 py-2 px-6">Best Sellers</li>
-                            <li className="text-sm text-gray-800 hover:text-red-500 py-2 px-6">Out of Stock</li>
-                            <li className="text-sm text-gray-800 hover:text-red-500 py-2 px-6">New Products</li>
+                            <li className="text-sm text-rose-500 py-2 px-6">Best Sellers</li>
+                            <li className="text-sm text-gray-800 hover:text-rose-500 py-2 px-6">Out of Stock</li>
+                            <li className="text-sm text-gray-800 hover:text-rose-500 py-2 px-6">New Products</li>
                           </ul>
                         </div>
                       ) : (
@@ -106,7 +106,7 @@ export const LayoutAdmin: FC<Props> = ({children}) => {
                             <path d="M16.1667 3H12.8333C12.3731 3 12 3.3731 12 3.83333V7.16667C12 7.6269 12.3731 8 12.8333 8H16.1667C16.6269 8 17 7.6269 17 7.16667V3.83333C17 3.3731 16.6269 3 16.1667 3Z" stroke="#667EEA" strokeWidth={1} strokeLinecap="round" strokeLinejoin="round" />
                           </svg>
                         </div >
-                        <p className={pathname === '/admin/sites' ? "text-red-500 ml-3 text-lg" : "text-gray-700 ml-3 text-lg"}>Páginas</p>
+                        <p className={pathname === '/admin/sites' ? "text-rose-500 ml-3 text-lg" : "text-gray-700 ml-3 text-lg"}>Páginas</p>
                       </div>
                     </li>
                   </a>
@@ -123,7 +123,7 @@ export const LayoutAdmin: FC<Props> = ({children}) => {
                             <path d="M16.1667 3H12.8333C12.3731 3 12 3.3731 12 3.83333V7.16667C12 7.6269 12.3731 8 12.8333 8H16.1667C16.6269 8 17 7.6269 17 7.16667V3.83333C17 3.3731 16.6269 3 16.1667 3Z" stroke="#667EEA" strokeWidth={1} strokeLinecap="round" strokeLinejoin="round" />
                           </svg>
                         </div >
-                        <p className={pathname === '/admin/marks' ? "text-red-500 ml-3 text-lg" : "text-gray-700 ml-3 text-lg"}>Marcas</p>
+                        <p className={pathname === '/admin/marks' ? "text-rose-500 ml-3 text-lg" : "text-gray-700 ml-3 text-lg"}>Marcas</p>
                       </div>
                     </li>
                   </a>
@@ -177,9 +177,9 @@ export const LayoutAdmin: FC<Props> = ({children}) => {
                       {deliverables ? (
                         <div>
                           <ul className="my-3">
-                            <li className="text-sm text-red-500 py-2 px-6">Best Sellers</li>
-                            <li className="text-sm text-gray-800 hover:text-red-500 py-2 px-6">Out of Stock</li>
-                            <li className="text-sm text-gray-800 hover:text-red-500 py-2 px-6">New Products</li>
+                            <li className="text-sm text-rose-500 py-2 px-6">Best Sellers</li>
+                            <li className="text-sm text-gray-800 hover:text-rose-500 py-2 px-6">Out of Stock</li>
+                            <li className="text-sm text-gray-800 hover:text-rose-500 py-2 px-6">New Products</li>
                           </ul>
                         </div>
                       ) : (
@@ -245,14 +245,14 @@ export const LayoutAdmin: FC<Props> = ({children}) => {
               </div>
               <ul className="pr-12 xl:flex items-center h-full hidden">
                 <li 
-                  className={pathname === '/admin' ? "cursor-pointer h-full flex items-center text-sm text-red-600 tracking-normal border-b-2 border-red-600 mr-10" : "cursor-pointer h-full flex items-center text-sm text-gry-800 mr-10 tracking-normal"}
-                  // className="cursor-pointer h-full flex items-center text-sm text-red-600 tracking-normal border-b-2 border-red-600" 
+                  className={pathname === '/admin' ? "cursor-pointer h-full flex items-center text-sm text-rose-600 tracking-normal border-b-2 border-rose-600 mr-10" : "cursor-pointer h-full flex items-center text-sm text-gry-800 mr-10 tracking-normal"}
+                  // className="cursor-pointer h-full flex items-center text-sm text-rose-600 tracking-normal border-b-2 border-rose-600" 
                   onClick={() => router.push('/admin')}>Productos</li>
                 <li 
-                  className={pathname === '/admin/sites' ? "cursor-pointer h-full flex items-center mr-10  text-sm text-red-600 tracking-normal border-b-2 border-red-600 " : "cursor-pointer h-full flex items-center text-sm mr-10 text-gry-800 tracking-normal"}
+                  className={pathname === '/admin/sites' ? "cursor-pointer h-full flex items-center mr-10  text-sm text-rose-600 tracking-normal border-b-2 border-rose-600 " : "cursor-pointer h-full flex items-center text-sm mr-10 text-gry-800 tracking-normal"}
                   onClick={() => router.push('/admin/sites')}>Páginas</li>
                 <li 
-                  className={pathname === '/admin/marks' ? "cursor-pointer h-full flex items-center  text-sm text-red-600 tracking-normal border-b-2 border-red-600 " : "cursor-pointer h-full flex items-center text-sm text-gry-800 tracking-normal "}
+                  className={pathname === '/admin/marks' ? "cursor-pointer h-full flex items-center  text-sm text-rose-600 tracking-normal border-b-2 border-rose-600 " : "cursor-pointer h-full flex items-center text-sm text-gry-800 tracking-normal "}
                   onClick={() => router.push('/admin/marks')}>Marcas</li>
                 {/* <li className="cursor-pointer h-full flex items-center text-sm text-gry-800 mr-10 tracking-normal">Performance</li> */}
                 {/* <li className="cursor-pointer h-full flex items-center text-sm text-gray-800 tracking-normal">Deliverables</li> */}
@@ -269,7 +269,7 @@ export const LayoutAdmin: FC<Props> = ({children}) => {
                         <line x1={21} y1={21} x2={15} y2={15} />
                       </svg>
                     </div>
-                    <input className="border border-gray-100 focus:outline-none focus:border-red-600 w-56 rounded text-sm text-gray-500 bg-gray-100 pl-8 py-2" type="text" placeholder="Search" />
+                    <input className="border border-gray-100 focus:outline-none focus:border-rose-600 w-56 rounded text-sm text-gray-500 bg-gray-100 pl-8 py-2" type="text" placeholder="Search" />
                   </div>
                 </div> */}
                 <div className="w-full h-full flex">
@@ -283,7 +283,7 @@ export const LayoutAdmin: FC<Props> = ({children}) => {
                   <div aria-haspopup="true" className="cursor-pointer w-full flex items-center justify-end relative" onClick={() => setProfile(!profile)}>
                     {/* {profile ? (
                       <ul className="p-2 w-40 border-r bg-white absolute rounded z-40 left-0 shadow mt-64 ">
-                        <li className="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-red-600 focus:text-red-600 focus:outline-none">
+                        <li className="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-rose-600 focus:text-rose-600 focus:outline-none">
                           <div className="flex items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-user" width={20} height={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                               <path stroke="none" d="M0 0h24v24H0z" />
@@ -293,7 +293,7 @@ export const LayoutAdmin: FC<Props> = ({children}) => {
                             <span className="ml-2">My Profile</span>
                           </div>
                         </li>
-                        <li className="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-red-600 focus:text-red-600 focus:outline-none flex items-center">
+                        <li className="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-rose-600 focus:text-rose-600 focus:outline-none flex items-center">
                           <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-help" width={20} height={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" />
                             <circle cx={12} cy={12} r={9} />
@@ -302,7 +302,7 @@ export const LayoutAdmin: FC<Props> = ({children}) => {
                           </svg>
                           <span className="ml-2">Help Center</span>
                         </li>
-                        <li className="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-red-600 flex items-center focus:text-red-600 focus:outline-none">
+                        <li className="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-rose-600 flex items-center focus:text-rose-600 focus:outline-none">
                           <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-settings" width={20} height={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" />
                             <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
@@ -331,7 +331,7 @@ export const LayoutAdmin: FC<Props> = ({children}) => {
             </div>
             <div className="visible xl:hidden flex items-center relative">
               <ul className="p-2 w-64 border-r bg-white absolute top-0 -ml-2 rounded right-0 shadow mt-12 lg:mt-16 hidden">
-                <li className="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-red-600 focus:text-red-600 focus:outline-none">
+                <li className="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-rose-600 focus:text-rose-600 focus:outline-none">
                   <div className="flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-user" width={20} height={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                       <path stroke="none" d="M0 0h24v24H0z" />
@@ -341,7 +341,7 @@ export const LayoutAdmin: FC<Props> = ({children}) => {
                     <span className="ml-2">Profile</span>
                   </div>
                 </li>
-                <li className="flex xl:hidden cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-red-600 focus:text-red-600 focus:outline-none">
+                <li className="flex xl:hidden cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-rose-600 focus:text-rose-600 focus:outline-none">
                   <div className="flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-grid" width={20} height={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                       <path stroke="none" d="M0 0h24v24H0z" />
@@ -353,7 +353,7 @@ export const LayoutAdmin: FC<Props> = ({children}) => {
                     <span className="ml-2">Dashboard</span>
                   </div>
                 </li>
-                <li className="flex xl:hidden  cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-red-600 focus:text-red-600 focus:outline-none flex items-center relative">
+                <li className="flex xl:hidden  cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-rose-600 focus:text-rose-600 focus:outline-none flex items-center relative">
                   <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-help" width={20} height={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" />
                     <circle cx={12} cy={12} r={9} />
@@ -362,7 +362,7 @@ export const LayoutAdmin: FC<Props> = ({children}) => {
                   </svg>
                   <span className="ml-2">Products</span>
                 </li>
-                <li className="flex xl:hidden cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-red-600 flex items-center focus:text-red-600 focus:outline-none">
+                <li className="flex xl:hidden cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-rose-600 flex items-center focus:text-rose-600 focus:outline-none">
                   <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-settings" width={20} height={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" />
                     <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />

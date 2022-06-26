@@ -2,14 +2,14 @@ import Image from "next/image";
 import { useRouter } from 'next/router';
 import Link from "next/link";
 import React, { FC, useState } from "react";
-import { IHomeAppliance } from "../../../src/interfaces";
+import { IGlasses } from "../../../src/interfaces";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPenToSquare, faCircleMinus } from '@fortawesome/free-solid-svg-icons';
 import axios from "axios";
 import Swal from "sweetalert2";
 
 interface Props {
-  products: IHomeAppliance[];
+  products: IGlasses[];
 }
 
 
@@ -43,7 +43,7 @@ export const TableProduct: FC<Props> = ({ products }) => {
 					}),
 				// await axios.put(`${process.env.APIS_URL}/api/site/removecategory/${process.env.API_SITE}`, {category: id})
 				// await axios.put(`${process.env.APIS_URL}/api/site/removesection/${process.env.API_SITE}`, data)
-        await axios.delete(`${process.env.APIP_URL}/api/homeAppliance/${id}`)
+        await axios.delete(`${process.env.APIP_URL}/api/glasses/${id}`)
 				router.reload()
 			}
 		})
@@ -61,7 +61,7 @@ export const TableProduct: FC<Props> = ({ products }) => {
           <div className="my-6 container mx-auto flex flex-row lg:flex-row items-center lg:items-center justify-between ">
             <h4 className="text-2xl font-bold leading-tight text-gray-800">Productos</h4>
             <Link href="/admin/products/new">
-              <a  className="transition duration-150 ease-in-out hover:bg-red-600 focus:outline-none border bg-red-500 rounded text-white px-8 py-2 text-sm">Nuevo Producto</a>
+              <a  className="transition duration-150 ease-in-out hover:bg-rose-600 focus:outline-none border bg-rose-500 rounded text-white px-8 py-2 text-sm">Nuevo Producto</a>
             </Link>
           </div>
             <div className="hidden lg:flex">

@@ -3,7 +3,7 @@ export const Home = () => {
 		<section className="relative bg-white">
 			<img
 				className="absolute inset-0 object-[75%] sm:object-[25%] object-cover w-full h-full opacity-25 sm:opacity-100"
-				src="https://res.cloudinary.com/dvcyhn0lj/image/upload/v1656213894/React-jj/blogs/i/11-mitos-electrodomesticos-hora-dejes-creerte-2157733_tdbc3k.webp"
+				src="https://res.cloudinary.com/dvcyhn0lj/image/upload/v1645194764/glass/home/home-bg-1_ti0s6k.png"
 				alt="Couple on a bed with a dog"
 			/>
 			<div className="hidden sm:block sm:inset-0 sm:absolute sm:bg-gradient-to-r sm:from-white sm:to-transparent"></div>
@@ -12,24 +12,24 @@ export const Home = () => {
 				<div className="max-w-xl text-center sm:text-left">
 					<h1 className="text-3xl font-extrabold sm:text-5xl">
 						La calidad esta{' '}
-						<strong className="font-extrabold text-red-600 sm:block">
+						<strong className="font-extrabold text-rose-600 sm:block">
 							Disponible
 						</strong>
 					</h1>
 					<p className="max-w-lg mt-4 sm:leading-relaxed sm:text-xl">
-						Tienda Online de Electrodomesticos
+						Optica Online
 					</p>
 
 					<div className="flex flex-wrap gap-4 mt-8 text-center">
 						<a
-							className="block w-full px-12 py-3 text-sm font-medium text-white rounded shadow bg-red-500 sm:w-auto active:bg-red-500 hover:bg-red-600 focus:outline-none focus:ring"
+							className="block w-full px-12 py-3 text-sm font-medium text-white rounded shadow bg-rose-500 sm:w-auto active:bg-rose-500 hover:bg-rose-600 focus:outline-none focus:ring"
 							href=""
 						>
 							Ver Productos
 						</a>
 
 						<a
-							className="block w-full px-12 py-3 text-sm font-medium bg-white rounded shadow text-red-500 sm:w-auto hover:text-red-600 active:text-red-500 focus:outline-none focus:ring"
+							className="block w-full px-12 py-3 text-sm font-medium bg-white rounded shadow text-rose-500 sm:w-auto hover:text-rose-600 active:text-rose-500 focus:outline-none focus:ring"
 							href=""
 						>
 							Descuentos

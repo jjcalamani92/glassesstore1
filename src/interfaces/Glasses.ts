@@ -1,4 +1,4 @@
-export interface IHomeAppliance {
+export interface IGlasses {
 	_id: string;
 	name: string;
 	brand: string;
@@ -16,10 +16,11 @@ export interface IHomeAppliance {
 	status: boolean;
 	site: string;
 	
-	color: string;
-	sizes: string[];
+	glasses: string;
+	form: string;
+	bridge: string;
+	rod: string;
 }
-
 export interface IMark {
 	_id: string;
 	name: string;

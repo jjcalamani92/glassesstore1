@@ -1,5 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from "next";
-import { IHomeAppliance, } from "../../src/interfaces";
+import { IGlasses, } from "../../src/interfaces";
 import { CATEGORY } from "../../src/gql/query";
 import { Category, ISeo} from '../../src/interfaces/Site';
 import { SBS } from "../../src/gql/siteQuery";
@@ -34,8 +34,8 @@ const CategoryPage:FC<Props>= ({seo, category}) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async (ctx) => {
-  const { homeApplianceAll } = await graphQLClientP.request(CATEGORY, { site: `${process.env.API_SITE}`})
-	const paths = homeApplianceAll.map((data:IHomeAppliance) => ({
+  const { glassesAll } = await graphQLClientP.request(CATEGORY, { site: `${process.env.API_SITE}`})
+	const paths = glassesAll.map((data:IGlasses) => ({
     params: { category: data.category}
   }))
 	return {
@@ -77,7 +77,7 @@ export default CategoryPage;
 
 // import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 
-// import { IHomeAppliance, } from "../../src/interfaces";
+// import { IGlasses, } from "../../src/interfaces";
 // import { CATEGORY } from "../../src/gql/query";
 // import { client } from "../../src/apollo";
 // import { Category} from '../../src/interfaces/Site';
@@ -135,15 +135,15 @@ export default CategoryPage;
 // 	// console.log(JSON.stringify(datas, undefined, 2))
 // 	// const {site} = await graphQLClientS.request(SBS, {id: process.env.API_SITE})
 // 	// console.log(JSON.stringify(site, undefined, 2))
-//   const { homeApplianceAll } = await graphQLClientP.request(CATEGORY, { site: `${process.env.API_SITE}`})
-// 	// console.log(JSON.stringify(homeApplianceAll, undefined, 2 ));
-// 	// console.log(homeApplianceAll)
+//   const { glassesAll } = await graphQLClientP.request(CATEGORY, { site: `${process.env.API_SITE}`})
+// 	// console.log(JSON.stringify(glassesAll, undefined, 2 ));
+// 	// console.log(glassesAll)
 // 	// const { data } = await client.query({
 // 	// 	query: CATEGORY,
 //   //   variables: { site: `${process.env.API_SITE}`},
 // 	// });
 // 	// console.log(data)
-// 	const paths = homeApplianceAll.map((data:IHomeAppliance) => ({
+// 	const paths = glassesAll.map((data:IGlasses) => ({
 //     params: { category: data.category}
 //   }))
 // 	return {

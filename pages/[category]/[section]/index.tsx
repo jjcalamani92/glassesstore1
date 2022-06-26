@@ -1,5 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from "next";
-import { Category,Section, IHomeAppliance, ISeo } from "../../../src/interfaces";
+import { Category,Section, IGlasses, ISeo } from "../../../src/interfaces";
 import React, { FC, useContext } from "react";
 import { SECTION } from "../../../src/gql/query";
 import { SBI } from "../../../src/gql/siteQuery";
@@ -29,8 +29,8 @@ const SectionPage:FC<Props> = ({seo, section}) => {
   );
 };
 export const getStaticPaths: GetStaticPaths = async (ctx) => {
-  const { homeApplianceAll } = await graphQLClientP.request(SECTION , {site: `${process.env.API_SITE}`})
-  const paths = homeApplianceAll.map((data:IHomeAppliance) => ({
+  const { glassesAll } = await graphQLClientP.request(SECTION , {site: `${process.env.API_SITE}`})
+  const paths = glassesAll.map((data:IGlasses) => ({
     params: data
   }))
   return {
@@ -76,7 +76,7 @@ export default SectionPage;
 
 // import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 
-// import { Category,Section, IHomeAppliance } from "../../../src/interfaces";
+// import { Category,Section, IGlasses } from "../../../src/interfaces";
 
 // import { client } from "../../../src/apollo";
 // import React from "react";
@@ -131,7 +131,7 @@ export default SectionPage;
 // 		query: SECTION,
 //     variables: { site: `${process.env.API_SITE}`},
 // 	});
-//   const paths = data.homeApplianceAll.map((data:IHomeAppliance) => ({
+//   const paths = data.glassesAll.map((data:IGlasses) => ({
 //     params: { category: data.category, section: data.section }
 //   })
 //   )

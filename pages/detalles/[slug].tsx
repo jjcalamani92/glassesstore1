@@ -1,6 +1,6 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import { FC, useContext } from 'react';
-import { Category, IHomeAppliance, ISeo, Item, Section } from "../../src/interfaces";
+import { Category, IGlasses, ISeo, Item, Section } from "../../src/interfaces";
 import { PBS, PRODUCT_BY_SLUG } from "../../src/gql/query";
 import { ProductOverviews, HeadingPrimary } from "../../components/Components";
 import { Layout } from "../../components/Layout";
@@ -9,7 +9,7 @@ import { SBI } from "../../src/gql/siteQuery";
 import { UiContext } from "../../src/context";
 
 interface SlugPage {
-	product: IHomeAppliance
+	product: IGlasses
 	seo: ISeo
 }
 
@@ -28,9 +28,9 @@ const SlugPage: NextPage<SlugPage> = ({ product, seo }) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async (ctx) => {
-	const { homeApplianceAll } = await graphQLClientP.request(PBS , {site: `${process.env.API_SITE}`})
+	const { glassesAll } = await graphQLClientP.request(PBS , {site: `${process.env.API_SITE}`})
 
-	const paths = homeApplianceAll.map((data: IHomeAppliance) => ({
+	const paths = glassesAll.map((data: IGlasses) => ({
 		params: { slug: data.slug }
 	}));
 	return {
@@ -42,23 +42,23 @@ export const getStaticPaths: GetStaticPaths = async (ctx) => {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
 	const { slug = "" } = params as { slug: string };
 
-	const { homeApplianceBySlug } = await graphQLClientP.request(PRODUCT_BY_SLUG, {slug: `${slug}`, site: `${process.env.API_SITE}`})
+	const { glassesBySlug } = await graphQLClientP.request(PRODUCT_BY_SLUG, {slug: `${slug}`, site: `${process.env.API_SITE}`})
 		const { site } = await graphQLClientS.request(SBI, {id: process.env.API_SITE})
 	const res = site.categories.find(findCategory)
 	function findCategory(res:Category){
-		return res.href === `${homeApplianceBySlug.category}`;
+		return res.href === `${glassesBySlug.category}`;
 	}
   const re = res.sections.find(findSection)
 	function findSection(re:Section){
-		return re.href === `${homeApplianceBySlug.section}`;
+		return re.href === `${glassesBySlug.section}`;
 	}
   const r = re.items.find(findItem)
 	function findItem(r:Item){
-		return r.href === `${homeApplianceBySlug.item}`;
+		return r.href === `${glassesBySlug.item}`;
 	}
 	return {
 		props: {
-			product: homeApplianceBySlug,
+			product: glassesBySlug,
 			seo: {
         category: {
           name: res.name,
@@ -82,7 +82,7 @@ export default SlugPage;
 
 // import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 // import { useQuery } from "@apollo/client";
-// import { IHomeAppliance } from "../../src/interfaces";
+// import { IGlasses } from "../../src/interfaces";
 // import { CLOTHINGS, PRODUCT_BY_SLUG } from "../../src/gql/query";
 // import { client } from "../../src/apollo";
 // import { Spinner01, ProductOverviews05 } from "../../components/Components";
@@ -104,8 +104,8 @@ export default SlugPage;
 // 			title={"- Detalles"}
 // 			pageDescription={"Detalles de los productos"}
 // 		>
-//       <Heading01 category={`${data.homeApplianceBySlug.category}`} section={`${data.homeApplianceBySlug.section}`} item={`${data.homeApplianceBySlug.item}`} name={`${data.homeApplianceBySlug.name}`}/>
-// 			<ProductOverviews05 product={data.homeApplianceBySlug} />
+//       <Heading01 category={`${data.glassesBySlug.category}`} section={`${data.glassesBySlug.section}`} item={`${data.glassesBySlug.item}`} name={`${data.glassesBySlug.name}`}/>
+// 			<ProductOverviews05 product={data.glassesBySlug} />
 // 		</Layout>
 // 	);
 // };
@@ -115,7 +115,7 @@ export default SlugPage;
 // 	const { data } = await client.query({
 // 		query: CLOTHINGS
 // 	});
-// 	const paths = data.homeAppliances.map((data: IHomeAppliance) => ({
+// 	const paths = data.glassess.map((data: IGlasses) => ({
 // 		params: { slug: data.slug }
 // 	}));
 // 	return {

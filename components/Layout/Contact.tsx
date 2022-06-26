@@ -35,7 +35,7 @@ export const Contact: FC<Props> = ({ site }) => {
                     {/* <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
                   email:
                 </h2> */}
-                    {/* <a className="text-orange-500 leading-relaxed">info@info.com</a> */}
+                    {/* <a className="text-rose-500 leading-relaxed">info@info.com</a> */}
                     <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs ">
                       Telefóno:
                     </h2>
@@ -58,7 +58,7 @@ export const Contact: FC<Props> = ({ site }) => {
                     type="text"
                     id="name"
                     name="name"
-                    className="w-full bg-white rounded border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-600 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-white rounded border border-gray-300 focus:border-rose-500 focus:ring-2 focus:ring-rose-600 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
                 <div className="relative mb-4">
@@ -69,7 +69,7 @@ export const Contact: FC<Props> = ({ site }) => {
                     type="email"
                     id="email"
                     name="email"
-                    className="w-full bg-white rounded border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-600 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-white rounded border border-gray-300 focus:border-rose-500 focus:ring-2 focus:ring-rose-600 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
                 <div className="relative mb-4">
@@ -79,11 +79,11 @@ export const Contact: FC<Props> = ({ site }) => {
                   <textarea
                     id="message"
                     name="message"
-                    className="w-full bg-white rounded border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-600 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-white rounded border border-gray-300 focus:border-rose-500 focus:ring-2 focus:ring-rose-600 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                     defaultValue={""}
                   />
                 </div>
-                <button className="text-white bg-orange-500 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded text-lg">
+                <button className="text-white bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-600 rounded text-lg">
                   Enviar Mensaje
                 </button>
                 {/* <p className="text-xs text-gray-500 mt-3">

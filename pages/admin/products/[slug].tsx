@@ -1,11 +1,11 @@
 import { NextPage, GetServerSideProps } from 'next';
 import { PRODUCT_BY_SLUG } from '../../../src/gql/query';
-import { IHomeAppliance } from "../../../src/interfaces";
+import { IGlasses } from "../../../src/interfaces";
 import { GraphQLClient } from 'graphql-request';
 import { Form } from '../../../components/Components';
 import { LayoutAdmin } from '../../../components/Layout';
 interface Props {
-	product: IHomeAppliance;
+	product: IGlasses;
 }
 const client = new GraphQLClient(`${process.env.APIP_URL}/graphql`)
 const ProductPage: NextPage<Props> = ({ product }) => {
@@ -20,7 +20,7 @@ const ProductPage: NextPage<Props> = ({ product }) => {
 
 export const getServerSideProps: GetServerSideProps = async ({ query }) => {
 	const { slug = '' } = query
-	let product:IHomeAppliance | null | any;
+	let product:IGlasses | null | any;
 	if (slug === 'new') {
 		
     product = {
@@ -44,7 +44,7 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
 		const data = await client.request(
 			PRODUCT_BY_SLUG, { slug: query.slug, site: process.env.API_SITE }
 		);
-		product = data.homeApplianceBySlug
+		product = data.glassesBySlug
 	}
 return {
 	props: {

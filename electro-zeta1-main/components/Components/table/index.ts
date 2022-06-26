@@ -1,6 +1,0 @@
-export * from './TableProduct'
-export * from './TableCategory'
-export * from './TableFeatured'
-export * from './TableItem'
-export * from './TableSection'
-export * from './TableSite'

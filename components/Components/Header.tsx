@@ -62,7 +62,7 @@ export const Header = () => {
                           key={category.name}
                           className={({ selected }) =>
                             classNames(
-                              selected ? 'text-red-600 border-red-600' : 'text-gray-900 border-transparent',
+                              selected ? 'text-rose-600 border-rose-600' : 'text-gray-900 border-transparent',
                               'flex-1 whitespace-nowrap py-4 px-1 border-b-2 text-base font-medium capitalize'
                             )
                           }
@@ -201,7 +201,7 @@ export const Header = () => {
       </Transition.Root>
 
       <header className="relative bg-white">
-        {/* <p className="bg-red-600 h-10 flex items-center justify-center text-sm font-medium text-white px-4 sm:px-6 lg:px-8">
+        {/* <p className="bg-rose-600 h-10 flex items-center justify-center text-sm font-medium text-white px-4 sm:px-6 lg:px-8">
           Obtenga envío gratuito en pedidos superiores a $ 100
         </p> */}
 
@@ -245,7 +245,7 @@ export const Header = () => {
                             <Popover.Button
                               className={classNames(
                                 open
-                                  ? 'border-red-600 text-red-600'
+                                  ? 'border-rose-600 text-rose-600'
                                   : 'border-transparent text-gray-700 hover:text-gray-800',
                                 'relative z-10 flex items-center transition-colors ease-out duration-200 text-sm font-medium border-b-2 -mb-px pt-px capitalize'
                               )}

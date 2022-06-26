@@ -34,7 +34,7 @@ interface Props {
               </div> */}
               <div className="xl:w-full xl:mx-0 h-12 block bg-white shadow rounded">
                   <ul className="flex border-b px-5">
-                      <li onClick={() => setActiveStatus(1)} className={activeStatus == 1 ? "text-sm border-red-600 pt-3 rounded-t text-red-600 mr-12" : "text-sm text-gray-600 py-3 flex items-center mr-12 hover:text-red-600 cursor-pointer"}>
+                      <li onClick={() => setActiveStatus(1)} className={activeStatus == 1 ? "text-sm border-rose-600 pt-3 rounded-t text-rose-600 mr-12" : "text-sm text-gray-600 py-3 flex items-center mr-12 hover:text-rose-600 cursor-pointer"}>
                           <div className="flex items-center mb-3">
                               <span>
                                   <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-home" width={16} height={16} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -46,9 +46,9 @@ interface Props {
                               </span>
                               <span className="ml-1 font-normal">{activeStatus == 1 ? "Sitio" : "Sitio"}</span>
                           </div>
-                          {activeStatus == 1 && <div className="w-full h-1 bg-red-600 rounded-t-md" />}
+                          {activeStatus == 1 && <div className="w-full h-1 bg-rose-600 rounded-t-md" />}
                       </li>
-                      <li onClick={() => setActiveStatus(2)} className={activeStatus == 2 ? "text-sm border-red-600 pt-3 rounded-t text-red-600 mr-12" : "text-sm text-gray-600 py-3 flex items-center mr-12 hover:text-red-600 cursor-pointer"}>
+                      <li onClick={() => setActiveStatus(2)} className={activeStatus == 2 ? "text-sm border-rose-600 pt-3 rounded-t text-rose-600 mr-12" : "text-sm text-gray-600 py-3 flex items-center mr-12 hover:text-rose-600 cursor-pointer"}>
                           <div className="flex items-center mb-3">
                               <span>
                                   <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-eye" width={16} height={16} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -60,9 +60,9 @@ interface Props {
                               </span>
                               <span className="ml-1 font-normal">{activeStatus == 2 ? "Categorias" : "Categorias"}</span>
                           </div>
-                          {activeStatus == 2 && <div className="w-full h-1 bg-red-600 rounded-t-md" />}
+                          {activeStatus == 2 && <div className="w-full h-1 bg-rose-600 rounded-t-md" />}
                       </li>
-                      <li onClick={() => setActiveStatus(3)} className={activeStatus == 3 ? "text-sm border-red-600 pt-3 rounded-t text-red-600 mr-12" : "text-sm text-gray-600 py-3 flex items-center mr-12 hover:text-red-600 cursor-pointer"}>
+                      <li onClick={() => setActiveStatus(3)} className={activeStatus == 3 ? "text-sm border-rose-600 pt-3 rounded-t text-rose-600 mr-12" : "text-sm text-gray-600 py-3 flex items-center mr-12 hover:text-rose-600 cursor-pointer"}>
                           <div className="flex items-center mb-3">
                               <span>
                                   <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-eye" width={16} height={16} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -74,7 +74,7 @@ interface Props {
                               </span>
                               <span className="ml-1 font-normal">{activeStatus == 3 ? "Paginas" : "Paginas"}</span>
                           </div>
-                          {activeStatus == 3 && <div className="w-full h-1 bg-red-600 rounded-t-md" />}
+                          {activeStatus == 3 && <div className="w-full h-1 bg-rose-600 rounded-t-md" />}
                       </li>
                   </ul>
               </div>

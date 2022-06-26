@@ -37,7 +37,7 @@ export const Register = () => {
 	return (
 		<form
 			onSubmit={handleSubmit(onRegisterSubmit)}
-			className="h-screen flex bg-gray-100 from-green-400 to-red-900 w-full py-16 px-4"
+			className="h-screen flex bg-gray-100 from-green-400 to-rose-900 w-full py-16 px-4"
 		>
 			<div className="flex flex-col items-center justify-center w-full">
 				<div className="bg-white shadow rounded lg:w-1/3  md:w-1/2 w-auto  p-10">
@@ -62,7 +62,7 @@ export const Register = () => {
 							})}
 						/>
 						<div>
-							{errors.username && <span className="text-sm text-red-500">{errors.username.message}</span>}
+							{errors.username && <span className="text-sm text-rose-500">{errors.username.message}</span>}
 						</div>
 					</div>
 					<div className="mt-6  w-full">
@@ -79,7 +79,7 @@ export const Register = () => {
 							})}
 						/>
 						<div>
-							{errors.email && <span className="text-sm text-red-500">{errors.email.message}</span>}
+							{errors.email && <span className="text-sm text-rose-500">{errors.email.message}</span>}
 						</div>
 					</div>
 					<div className="mt-6  w-full">
@@ -112,12 +112,12 @@ export const Register = () => {
 							</div>
 						</div>
 						<div>
-							{errors.password && <span className="text-sm text-red-500">{errors.password.message}</span>}
+							{errors.password && <span className="text-sm text-rose-500">{errors.password.message}</span>}
 						</div>
 						{
 							showError
 								?
-								<div className="text-sm text-red-500 pt-4">
+								<div className="text-sm text-rose-500 pt-4">
 									El correo ya esta registrado!!
 								</div>
 								:
@@ -128,7 +128,7 @@ export const Register = () => {
 						<button
 							type="submit"
 							aria-label="create my account"
-							className="focus:ring-2 focus:ring-offset-2 focus:ring-red-600 text-sm font-semibold leading-none text-white focus:outline-none bg-red-600 border rounded hover:bg-red-700 py-4 w-full"
+							className="focus:ring-2 focus:ring-offset-2 focus:ring-rose-600 text-sm font-semibold leading-none text-white focus:outline-none bg-rose-600 border rounded hover:bg-rose-700 py-4 w-full"
 						>
 							Register
 						</button>

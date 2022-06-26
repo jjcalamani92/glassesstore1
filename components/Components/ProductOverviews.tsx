@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { FC, useContext, } from "react";
 import { UiContext } from "../../src/context";
-import { IHomeAppliance } from "../../src/interfaces";
+import { IGlasses } from "../../src/interfaces";
 import { SwiperDetail } from "./Swiper";
 import { useRouter } from 'next/router';
 
@@ -12,7 +12,7 @@ function classNames(...classes: string[]) {
 }
 
 interface Props {
-	product: IHomeAppliance;
+	product: IGlasses;
 }
 
 export const ProductOverviews: FC<Props> = ({ product }) => {
@@ -39,7 +39,7 @@ export const ProductOverviews: FC<Props> = ({ product }) => {
 							{/* <form className="mt-5">
 								<button
 									type="submit"
-									className="mt-4 w-full bg-red-500 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-400"
+									className="mt-4 w-full bg-rose-500 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-rose-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-400"
 								>
 									Agregar al carrito
 								</button>
@@ -47,7 +47,7 @@ export const ProductOverviews: FC<Props> = ({ product }) => {
 							<a
 								href={`https://wa.me/591${site.numberPhone}?text=Hola%20me%20interesa%20este%20producto:%20https://${site.domain}/detalles/${product.slug}`}
 								target={'blank'}
-								className=" w-full bg-red-500 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-400"
+								className=" w-full bg-rose-500 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-rose-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-400"
 							>
 								Preguntar por WhatsApp
 							</a>
@@ -60,12 +60,12 @@ export const ProductOverviews: FC<Props> = ({ product }) => {
 						</div>
 						<div className="mb-4">
 							<h2 className="text-sm font-medium text-gray-900 mb-4">Compartir</h2>
-							<div className="grid grid-cols-7 gap-2 text-red-500 ">
+							<div className="grid grid-cols-7 gap-2 text-rose-500 ">
 
 								<Link href={`https://www.facebook.com/sharer.php?u=https://${site.domain}${router.asPath}`}>
 									<a target={'_blank'}>
 										<FontAwesomeIcon
-											className="w-6 h-6 hover:text-red-600"
+											className="w-6 h-6 hover:text-rose-600"
 											icon={faFacebookF}
 										/>
 									</a>
@@ -73,7 +73,7 @@ export const ProductOverviews: FC<Props> = ({ product }) => {
 								<Link href={'#'}>
 									<a target={'_blank'}>
 										<FontAwesomeIcon
-											className="w-6 h-6 hover:text-red-600"
+											className="w-6 h-6 hover:text-rose-600"
 											icon={faInstagram}
 										/>
 									</a>
@@ -81,7 +81,7 @@ export const ProductOverviews: FC<Props> = ({ product }) => {
 								<Link href={'#'}>
 									<a target={'_blank'}>
 										<FontAwesomeIcon
-											className="w-6 h-6 hover:text-red-600"
+											className="w-6 h-6 hover:text-rose-600"
 											icon={faTwitter}
 										/>
 									</a>
@@ -89,7 +89,7 @@ export const ProductOverviews: FC<Props> = ({ product }) => {
 								<Link href={'#'}>
 									<a target={'_blank'}>
 										<FontAwesomeIcon
-											className="w-6 h-6 hover:text-red-600"
+											className="w-6 h-6 hover:text-rose-600"
 											icon={faLinkedin}
 										/>
 									</a>
@@ -97,7 +97,7 @@ export const ProductOverviews: FC<Props> = ({ product }) => {
 								<Link href={'#'}>
 									<a target={'_blank'}>
 										<FontAwesomeIcon
-											className="w-6 h-6 hover:text-red-600"
+											className="w-6 h-6 hover:text-rose-600"
 											icon={faPinterest}
 										/>
 									</a>
@@ -105,7 +105,7 @@ export const ProductOverviews: FC<Props> = ({ product }) => {
 								<Link href={'#'}>
 									<a target={'_blank'}>
 										<FontAwesomeIcon
-											className="w-6 h-6 hover:text-red-600"
+											className="w-6 h-6 hover:text-rose-600"
 											icon={faWhatsapp}
 										/>
 									</a>
@@ -113,7 +113,7 @@ export const ProductOverviews: FC<Props> = ({ product }) => {
 								<Link href={'#'}>
 									<a target={'_blank'}>
 										<FontAwesomeIcon
-											className="w-6 h-6 hover:text-red-600"
+											className="w-6 h-6 hover:text-rose-600"
 											icon={faTelegram}
 										/>
 									</a>

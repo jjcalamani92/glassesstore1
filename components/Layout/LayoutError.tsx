@@ -16,7 +16,7 @@ export const LayoutError = () => {
 					<a
 						rel="noopener noreferrer"
 						href="#"
-						className="px-8 py-3 font-semibold rounded bg-red-500 hover:bg-red-600 text-white inline-block"
+						className="px-8 py-3 font-semibold rounded bg-rose-500 hover:bg-rose-600 text-white inline-block"
 					>
 						Volver a la página de inicio
 					</a>
